@@ -54,10 +54,10 @@ li a:hover {
   width: 500px;
   margin: 0 auto;
 }
-
-#luf {
-    margin-left: 10px;
-    
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
-
 
