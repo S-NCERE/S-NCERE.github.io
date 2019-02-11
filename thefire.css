@@ -18,7 +18,7 @@ h1 {
 }
 
 #sketch {
-    padding: 50px 0;
-    width: 500px;
-    margin: 0 auto;
+    position: relative;
+    display: block;
+    margin-left: 50%;
 }
