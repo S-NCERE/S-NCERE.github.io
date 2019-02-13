@@ -1,22 +1,31 @@
-function setup() {
-    var cnv = createCanvas(500,500);
-//    var x = (windowWidth - width) / 2;
-//  var y = (windowHeight - height) / 2;
-//  cnv.position(x, y);
-    cnv.parent('sketch');
-    
-    background(0);
-//  background(147,112,219);(purple)
+var r;
+var g;
+var b;
 
-    
+function setup() {
+    var cnv = createCanvas(500, 500);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
+    cnv.parent('sketch');
+    background(0);
+    r = 218;
+    g = 172;
+    b = 213;
+
 }
 
-function draw() { 
 
+
+function draw() { 
+    
+    var pink = color(r, g, b);
+    var purple = color(147, 112,219);
+    var green = color(0, 255, 0);
 
 // outer  pink circle
-	stroke('#00FF00');
-    fill(218, 172, 213);
+	stroke(green);
+    fill(pink);
     ellipseMode(RADIUS);
     ellipse(250, 250, 150, 150);
 // top left purple circle cut out
@@ -30,42 +39,42 @@ function draw() {
     
  // inner circle purple 3   
     stroke(0);
-    fill(147,112,219);
+    fill(purple);
     ellipseMode(CENTER);
     ellipse(250, 250, 220, 220);
 // inner circle pink 3    
     stroke(0);
-    fill(218, 172, 213);
+    fill(pink);
     ellipseMode(CENTER);
     ellipse(250, 250, 190, 190);
 // inner circle purple 2
     stroke(0);
-    fill(147,112,219);
+    fill(purple);
     ellipseMode(CENTER);
     ellipse(250, 250, 160, 160);
 //  inner circle pink 2
     stroke(0);
-    fill(218, 172, 213);
+    fill(pink);
     ellipseMode(CENTER);
     ellipse(250, 250, 130, 130);
 // inner circle purple 1
     stroke(0);
-    fill(147,112,219);
+    fill(purple);
 	ellipseMode(CENTER);
     ellipse(250, 250, 100, 100);
 // inner circle pink 1
     stroke(0);
-    fill(218, 172, 213);
+    fill(pink);
     ellipseMode(CENTER);
     ellipse(250, 250, 70, 70);
     
     
 // crosshair dot
-    fill('#00FF00');
+    fill(green);
     ellipseMode(CENTER);
     ellipse(250, 250, 5, 5);
 // scope lines
-    stroke('#00FF00');
+    stroke(green);
     line(0, 250, 500, 250);
     line(250, 0, 250, 500);
 // above dot y axis crosshairs
@@ -84,8 +93,8 @@ function draw() {
     line(245, 230, 255, 230);
     line(245, 240, 255, 240);
     
-    line(245, 260, 255, 260);
-    line(245, 270, 255, 270);
+    line(225, 260, 275, 260);
+    line(235, 270, 265, 270);
     line(245, 280, 255, 280);
     
     line(245, 290, 255, 290);
@@ -113,6 +122,7 @@ function draw() {
     line(220,245, 220, 255);
     line(230,245, 230, 255);
     line(240,245, 240, 255);
+    
     line(260,245, 260, 255);
     line(270,245, 270, 255);
     line(280,245, 280, 255);
@@ -127,4 +137,21 @@ function draw() {
     line(370,245, 370, 255);
     line(380,245, 380, 255);
     line(390,245, 390, 255);
+    
+    
+  } 
+
+function mousePressed(){
+     if( r = 218, g = 172, b = 213) {
+         r = 0;
+         g = 0;
+         b = 0;
+     } else {
+    r = 218;
+    g = 172;
+    b = 213;
+     }
+        
+   
+    
 }
