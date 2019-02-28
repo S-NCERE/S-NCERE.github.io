@@ -162,8 +162,11 @@ function draw() {
     line(380,xaxis1, 380, xaxis2);
     line(390,xaxis1, 390, xaxis2);
     
-    
-    
+//    for loop bless
+////    for(  var i = 9; i<9; i++  ){
+//            line(0, 20 + (10i), 500, 20 + (10i))
+//}
+            
   } 
 
 function mousePressed(){
